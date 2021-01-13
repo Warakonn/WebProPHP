@@ -7,7 +7,8 @@
 </head>
 <body>
     <?php
-    echo "Hello Prachiburi";
+    echo "<h1> Hello </h1>";
+    echo "<h2> Prachinburi </h2>";
     ?>
 
 </body>
