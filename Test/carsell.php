@@ -17,11 +17,13 @@
     $Civic = 1149000;
     $Jazz = 849000;
     $City = 749000;
+    
     $SUM=$Num * $installment;
-    if ($SUM < $Accord) {
-        if($SUM < $Civic) {
-            if ($SUM < $Jazz) {
-                if ($SUM < $City ) {
+    function carCheck($Name,$Num,$installment,$Accord, $Civic,$Jazz ,$City,$SUM){
+    if ($SUM < $City) {
+        if($SUM < $Jazz) {
+            if ($SUM < $Civic) {
+                if ($SUM < $Accord ) {
                     echo "<table align='center' border='2' width='350'>";
                     echo"<tr><td>ชื่อลูกค้า : </td><td>$Name</td></tr>";
                     echo"<tr><td>ผ่อนงวดละ : </td><td>$Num</td></tr>";
@@ -33,14 +35,38 @@
                 
             }
         }
-    }else {
-        echo 1 ;
     }
-    
-    
-    
+    else if($SUM >= $Accord||$SUM >= $Civic||$SUM >= $Jazz||$SUM >= $City ){  
+        echo "<table align='center' border='2' width='350'>";
+        echo"<tr><td>ชื่อลูกค้า : </td><td>$Name</td></tr>";
+        echo"<tr><td>ผ่อนงวดละ : </td><td>$Num</td></tr>";
+        echo"<tr><td>ยอดรวมเงิน : </td><td>$SUM</td></tr>";
+        echo"<tr><td colspan='2' align='center'>รถที่ท่านสามารถเลือกซื้อได้</td></tr>";
+        echo"<tr><td colspan='2' align='center'><a href='carpay.php'><input type='submit' value='BACK TO HOME' ></a></td></tr>";
+        
+        if ($SUM>= $Accord) {
+            echo "<tr><td>Accord<img src='img/accord.png' alt='' style='width:300px'><td>$Accord</td></td></tr>";
+        }
+        if ($SUM>= $Civic) {
+            echo "<tr><td>Civic<img src='img/civic.png' alt='' style='width:300px'><td>$Civic</td></td></tr>" ;
+        }
+        if ($SUM>= $Jazz) {
+            echo "<tr><td>Jazz<img src='img/jazz.png' alt='' style='width:300px'><td>$Jazz</td></td></tr>" ;
+        }
+        if ($SUM>= $City) {
+            echo "<tr><td>City<img src='img/city.png' alt='' style='width:300px'><td>$City</td></td></tr>" ;
+        }
+        echo "</table>";
+        
+            
+}
+    }
 }
 ?>
+    <?php
+    carCheck($Name,$Num,$installment,$Accord, $Civic,$Jazz ,$City,$SUM);
+    ?>
+
 
 </body>
 </html>
