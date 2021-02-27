@@ -18,6 +18,8 @@ Dived num <input type = "text" name = "Divide"><br>
     $Sum = 0;
     $i= 0;echo "<br>";
     // $found = false;
+        
+}
     do{
         if($start % $div ==0){
             echo $start.",";
@@ -27,9 +29,10 @@ Dived num <input type = "text" name = "Divide"><br>
         $start++;
         
         }while ($start < $end);
-    }
-    echo "<br>".'จำนวนที่หารลงตัว='.$i;
+        echo "<br>".'จำนวนที่หารลงตัว='.$i;
     echo "<br>".'ผลรวมของตัวเเลขที่หารลงตัว='.$Sum;
+    
+    
 
     ?>
 </body>
