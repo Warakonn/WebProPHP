@@ -31,8 +31,7 @@
                     echo "<font color = red >ครั้งที่ ".$count1.'='.$renum.' => ยินดีด้วย คุณมีเลขนี้</font><br>';
                     $count++;
                     $count1++;
-                    if($count == 5){
-                    }
+                    
                 }
                 else{
                     echo "ครั้งที่ ".$count1. " = ".$renum. ' => เสียใจด้วย คุณไม่มีเลขนี้<br>';
