@@ -43,7 +43,6 @@
         echo"<tr><td>ยอดรวมเงิน : </td><td>$SUM</td></tr>";
         echo"<tr><td colspan='2' align='center'>รถที่ท่านสามารถเลือกซื้อได้</td></tr>";
         echo"<tr><td colspan='2' align='center'><a href='carpay.php'><input type='submit' value='BACK TO HOME' ></a></td></tr>";
-        
         if ($SUM>= $Accord) {
             echo "<tr><td>Accord<img src='img/accord.png' alt='' style='width:300px'><td>$Accord</td></td></tr>";
         }
@@ -56,9 +55,7 @@
         if ($SUM>= $City) {
             echo "<tr><td>City<img src='img/city.png' alt='' style='width:300px'><td>$City</td></td></tr>" ;
         }
-        echo "</table>";
-        
-            
+        echo "</table>";      
 }
     }
 }
@@ -66,7 +63,5 @@
     <?php
     carCheck($Name,$Num,$installment,$Accord, $Civic,$Jazz ,$City,$SUM);
     ?>
-
-
 </body>
 </html>
