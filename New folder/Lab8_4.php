@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +25,7 @@
 </body>
 </html>
 <?php
+
 // declare function page_header with argument and defualt value
     $row = $_POST['Row'];
     $col = $_POST['Col'];
@@ -54,16 +55,17 @@ function average($random)
      return $avg;
 }
    
-function page_header($title, $bgcolor = "ffffff") {
+function page_header($title, $bgcolor = "0000") {
 echo '<html lang="en"><head><meta charset="UTF-8">';
 echo '<title>' . $title . '</title></head>';
-echo '<body bgcolor="#' . $bgcolor . '">';
+echo '<body bgcolor="f000' . $bgcolor . '">';
 }
 // declare function page_footer
 function page_footer($message = "ขอบคุณ") {
 echo '<hr>' . $message ;
 echo '</body></html>';
 }
+
 // declare function checker
 function show_checker( $maxRow, $maxCol, $bgcolor1, $bgcolor2,$start,$end) {
 echo "<p align='center'> Row = $maxRow , Column = $maxCol </p>";
@@ -87,7 +89,6 @@ echo '<td bgcolor="#' . (($c % 2 == 1) ? $bgcolor2 : $bgcolor1) . '">';
 echo '  |', $ra . ' |  ' ,  '</td>';
 }
 echo '</tr>';
-
 }
 $sa = $sa / ($maxCol*$maxRow);
 echo '</table>';
@@ -100,5 +101,5 @@ echo $sa,"<br>";
 }
 page_header("Example 8-4", "FFDDEE");
 show_checker($row, $col,"33ff99","ffff99",$start,$end);
-
 page_footer("Thank You.");
+?>

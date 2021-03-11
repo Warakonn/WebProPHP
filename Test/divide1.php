@@ -38,7 +38,7 @@ Dived num <input type = "text" name = "Divide"><br><br>
                 do{
                     $start++;
                     if($start % $div ==0){
-                        echo $resualt+=1;
+                         $resualt+=1;
                     }
                 }while($start<=$end);
                 echo "จำนวนที่หารลงตัว = $resualt" ;
@@ -48,7 +48,7 @@ Dived num <input type = "text" name = "Divide"><br><br>
                 do{
                     $start++;
                     if($start % $div ==0){
-                        echo $total+=$start;
+                         $total+=$start;
                     }
                 }while($start<=$end);
                 echo "ผลรวมของตัวเลขที่หารลงตัว = $total" ;

@@ -1,9 +1,10 @@
 <html>
-<body>
+<body><center>
     <?php
     $j=0;
     $num = array();
     $renum = 0;
+    
     for($n=0;$n<5;$n++){
         echo '<table border="1" align="center">';
         echo '<tr>';
@@ -44,6 +45,6 @@
 
     }
         
-    ?>
+    ?></center>
 </body>
 </html>

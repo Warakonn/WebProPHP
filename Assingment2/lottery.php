@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color:powderblue;">
+<body style="background-color:#f000;">
 <center>
     <form action ="result-lottery.php" method="POST">
         <h1 style="color:blue" >โปรแกรม ตรวจ เลขท้าย 2 ตัว</h1>

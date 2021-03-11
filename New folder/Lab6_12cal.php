@@ -22,9 +22,7 @@ for($c = 1; $c <= $colMax ; $c++) {
         echo "<font color='red'>$random</font>";
     }
     echo"</td>";
-// if ($r == $c)
-// echo "<td align='center'><font color='#33ff66'> $r,$c </td>";
-// else echo "<td align='center'> $r,$c </td>";
+
 }
 echo "</tr>";
 }
