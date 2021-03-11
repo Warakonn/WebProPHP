@@ -14,6 +14,7 @@ table, th, td {
   border: 1px solid black;
   width:500px;
 }
+
 </style>
 </head>
 
@@ -25,15 +26,15 @@ table, th, td {
   
 </header>
 Car Model
-<form action="" class="normal" style = "width:800px"><br><br><br>
+<form method = "post" action="calcar.php" class="normal" style = "width:800px"><br><br><br>
 <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars">
-    <option value="volvo">Accord</option>
-    <option value="saab">Civic</option>
-    <option value="fiat">Jazz</option>
-    <option value="audi">City</option>
+  <select id="car" name="car"  value = "">
+    <option value="1">Accord</option>
+    <option value="2">Civic</option>
+    <option value="3">Jazz</option>
+    <option value="4">City</option>
   </select>
-  <input type="submit">
+  <input type="submit"  value=" submit " id="submit">
   <br><br>
 <table>
     <tr>
