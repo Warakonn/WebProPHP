@@ -34,7 +34,7 @@ Car Model
     <option value="3">Jazz</option>
     <option value="4">City</option>
   </select>
-  <input type="submit"  value=" submit " id="submit">
+  <input type="submit"  value=" submit " id="submit" name="submit">
   <br><br>
 <table>
     <tr>
